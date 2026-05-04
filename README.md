@@ -7,7 +7,6 @@ Local Contact Harvester is a Thunderbird/Betterbird extension that scans selecte
 - Select a mail account from Thunderbird's account list.
 - Load folders for that account and scan only the folders you choose.
 - Optionally include subfolders when a parent folder is selected.
-- Skip messages from `@cy.gt.com`.
 - Extract sender name, email, and a best-effort role/title from signatures and nearby text.
 - Export results as a local CSV file.
 
