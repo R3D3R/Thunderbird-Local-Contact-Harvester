@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Local Contact Harvester</title>
+  <style>
+    body{font:14px/1.45 system-ui,sans-serif;margin:0;padding:12px;width:420px;background:#f7f6f2;color:#28251d}
+    h1{font-size:16px;margin:0 0 8px}
+    p{margin:0 0 10px;color:#5f5d58}
+    button,select{width:100%;padding:10px 12px;border:0;border-radius:8px}
+    button{background:#01696f;color:#fff;font-weight:600;cursor:pointer}
+    button:disabled{opacity:.6;cursor:not-allowed}
+    select{background:#ece8e1;color:#28251d;border:1px solid #d4d1ca}
+    .muted{font-size:12px;color:#6f6c66;margin-top:8px}
+    .status{margin-top:10px;padding:10px;border-radius:8px;background:#ece8e1;white-space:pre-wrap;min-height:72px}
+    .ok{background:#d9eadb;color:#1d4d25}
+    .err{background:#efd7da;color:#7a1f2d}
+    .box{max-height:220px;overflow:auto;background:#ece8e1;border-radius:8px;padding:8px;margin:10px 0}
+    label{display:flex;gap:8px;align-items:flex-start;padding:4px 0}
+    .row{display:flex;gap:8px;margin:8px 0}
+    .row button{width:auto;flex:1}
+    .secondary{background:#6f6c66}
+    .name{font-weight:600}
+    .small{font-size:12px;color:#6f6c66}
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+  <h1>Local Contact Harvester</h1>
+  <p>Select one account, then choose the folders you want to export. Folder names become company names in the CSV.</p>
+  <select id="accountSelect"></select>
+  <div class="row">
+    <button id="refreshFolders" type="button" class="secondary">Load folders</button>
+    <button id="selectAll" type="button" class="secondary">Select all</button>
+    <button id="selectNone" type="button" class="secondary">Clear</button>
+  </div>
+  <div id="folders" class="box">Choose an account and click Load folders.</div>
+  <button id="scanBtn">Scan selected folders</button>
+  <div id="status" class="status">Ready.</div>
+  <div class="muted">Shows only folders that currently return at least one message. No remote servers.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

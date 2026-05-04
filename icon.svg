@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Local Contact Harvester icon">
+  <rect x="6" y="10" width="52" height="44" rx="8" fill="#01696f"/>
+  <path d="M14 20h36v4H14zm0 10h24v4H14zm0 10h18v4H14z" fill="#f9f8f4"/>
+  <circle cx="46" cy="40" r="8" fill="#f9f8f4"/>
+  <path d="M46 35.5a3.5 3.5 0 1 1 0 7a3.5 3.5 0 0 1 0-7zm0 8.5c-3.2 0-6 1.6-7 4h14c-1-2.4-3.8-4-7-4z" fill="#01696f"/>
+</svg>
